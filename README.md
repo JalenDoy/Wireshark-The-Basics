@@ -45,4 +45,53 @@ Arrival date of the packet <br/>
 CTF Answers <br/>
 <img src="https://i.imgur.com/MuCYFkj.png"/>
 
+<h2>Packet Navigation</h2>
 
+<p align="center">
+CTF Questions <br/>
+<img src="https://i.imgur.com/uLwsPNf.png"/>
+
+**Search the "r4w" string in packet details. What is the name of artist 1?**
+1. At the top of **Wireshark** click on **Edit** tab and then click on **Find Packet**.
+2. In the search bar, ensure **String** is selected and then type in **"r4w"** and the packet with the **r4w** will be automatically selected. Scroll down until r4w appears that string is the artist name. 
+
+<p align="center">
+The line that containts the r4w string <br/>
+<img src="https://i.imgur.com/1hHFyTh.png"/>
+
+**Go to packet 12 and read the comments. What is the answer?**
+1. Navigate to **packet 12** and in the bottom pane there is a tab named **Packet comments**. Click on that and a set of instructions should appear.
+
+<p align="center">
+Set of Instructions in Packet 12 <br/>
+<img src="https://i.imgur.com/vUgzWFo.png"/>
+
+2. At  the top of wireshark, click on **Go** and then **Go To Packet** and type in packet number **39765** in the top right.
+3. In the bottom pane, navigate to the **JPEG File Interchange Format** section and right click on it and select **Export Packet Bytes**.
+4. Name the exported file any name and save it to the Desktop or Downloads folder. Navigate to that folder and type **"md5sum [Filename]"**. The question is looking for the md5 hash but the TryHackMe instructions were not loaded so it was unclear what it was looking for. The hash is your answer.  
+
+<p align="center">
+MD5 Hash of the exported image<br/>
+<img src="https://i.imgur.com/W5UZGcK.png"/>
+
+**There is a ".txt" file inside the capture file. Find the file and read it; what is the alien's name?**
+1. In **Wireshark**, click on **File** > **EExport Objects** > **HTTP** and type in **.txt**.
+2. One file appears, save it to the Desktop or Downloads directory and then open it.
+
+<p align="center">
+HTTP Object List<br/>
+<img src="https://i.imgur.com/Hvvz7ze.png"/>
+
+3. Once opened, The answer will appear as **Packetmaster**.
+
+<p align="center">
+notetxt<br/>
+<img src="https://i.imgur.com/Zag3ddf.png"/>
+
+**Look at the expert info section. What is the number of warnings?**
+1. In **Wireshark**, click on red circle in the bottom right which will bring up the expert information page.
+2. Look at **Warning** at the top and either go into fullscreen or scroll to the right and the amount of warnings will appear. The answer is 1636.
+
+<p align="center">
+CTF Answers<br/>
+<img src="https://i.imgur.com/XKxZ1TA.png"/>
